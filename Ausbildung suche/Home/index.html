@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Startseite</title>
+</head>
+<body>
+
+    <header>
+        <img src="../bilder/image.png" alt="Logo" id="logo">
+        <a href="../Home/index.html" id="home"> AusbildungsSuche</a>
+
+        <nav>
+            <ul>
+                <li><a href="../Home/index.html">Startseite</a></li>
+                <li><a href="#">Über uns</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="dropdown">
+        <span><img src="../bilder/image2.png" alt="menü" id="dropdownBild" ></span>
+        <div class="dropdown-content">
+            <a href="#">Element 1</a>
+            <a href="#">Element 2</a>
+            <a href="#">Element 3</a>
+        </div>
+    </div>
+
+    <div id="acc">
+        <a href="../login/login.html" >Anmelden</a>
+        <b>/</b>
+        <a href="../register/register.html" style="color: red;">Registrieren</a>
+    </div>
+
+    <main>
+        <section id="suche">
+            <form>
+                <h2>Ausbildung Suchen</h2>
+                <br>
+		<label for="sucheInput">Was?</label>
+                <input type="search" id="sucheInput" name="sucheInput" placeholder="Beruf"><br>
+                <label for="ortinput">Wo?</label>
+                <input type="text" id="ortinput" name="ortinput" placeholder="Ort"><br>
+                <label for="zeitinput">Wann?</label>
+                <input type="date" id="zeitinput" name="zeitinput" placeholder="Ausbildungsbeginn"><br>
+	  </form>
+
+            <form action="../Suche/suche.html" method="get">
+                <button id="bSuche" type="submit">Suchen</button>
+            </form>
+
+            <div id="ka">Entscheide dich für einen Beruf, in dem du gefragt bist.</div>
+        </section>
+
+	<section id="beratung">
+            <form>
+                <h2>Beratung</h2><br>
+		<label for="email">E-Mail</label>
+                <input type="email" id="eMail" name="email" placeholder="E-Mail"><br>
+                <label for="nachricht">Deine Nachricht</label>
+                <textarea id="nachricht" placeholder="Max. 300 Wörter..."></textarea>
+                <p id="remaining-words">Verbleibende Wörter: 300</p><br>
+                <label for="fileInput">Deine Bewerbung:</label>
+                <input type="file" id="fileInput" name="fileInput" accept=".pdf"><br>
+
+                <button id="senden" type="submit">Senden</button>
+
+		 </form>
+
+            <div id="homeBild">
+                <img src="../bilder/image4.png" alt="logo">
+            </div>
+        </section>
+    </main>
+
+    <div id="vorFooter">
+        <div id="kontaktdaten">
+            <p id="kontakt">Kontakt</p>
+            <p id="email">E-mail: <b style="color: white;">support@ausbildungsSuche.com</b></p>
+            <p id="telefon">Telefon: <b style="color: white;">+49(0)5251 534 625 </b></p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Ausbildungssuche</p>
+    </footer>
+    
+
+
+</body>
+
+
+
+
+<script>
+        
+    document.getElementById('nachricht').addEventListener('input', function() {
+        var maxLength = 300;
+        var currentLength = this.value.split(/\s+/).length;
+
+        if (currentLength > maxLength) {
+            this.value = this.value.split(/\s+/).slice(0, maxLength).join(' ');
+            currentLength = maxLength;
+        }
+
+        var remainingWords = maxLength - currentLength;
+        document.getElementById('remaining-words').innerText = 'Verbleibende Wörter: ' + remainingWords;
+    });
+</script>
+
+</html>

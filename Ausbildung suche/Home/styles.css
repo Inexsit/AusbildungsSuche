@@ -1,0 +1,404 @@
+
+/*1920*1080*/
+
+body {
+ 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("../bilder/dark-gradient-6bly12umg2d4psr2.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center center; 
+    display: flex;
+    flex-direction: column;
+
+    height: 1000px;
+
+}
+
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+a{
+    color: white;
+    text-decoration: none
+}
+
+button {
+    background: transparent;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+button:hover {
+    background-color: #000000;
+}
+
+h2,h3{
+    position: relative;
+    align-self: center;
+}
+
+
+
+
+/*Header*/
+header {
+
+    border-bottom: 2px solid white;
+    color: white;
+    padding: 1em;
+    border-radius: 7px;
+}
+
+
+
+#home{
+    -webkit-text-stroke: 1px rgb(15, 60, 110); 
+
+    width: 300px;
+    font-size: 25px;
+    font-weight: 700;
+    margin-left: 10px;
+    color: white;
+
+    text-decoration: none
+}
+
+
+
+#logo,#home{
+
+        width: auto;
+        position: relative;
+        left: 5%;
+        
+    
+}
+
+#logo {
+    width: 50px; 
+    height: auto; 
+}
+
+
+nav {
+
+    position: relative;
+    right: 60%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+
+}
+
+nav ul {
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 30px;
+}
+
+nav a {
+    -webkit-text-stroke: 1px rgb(15, 60, 110);
+    font-weight: 700;
+    font-size: 17px;
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown {
+
+    width: 70px;
+    height: 70px;
+    margin-left:20px;
+    position: relative;
+    top: -9%;
+}
+
+#dropdownBild{
+    width: 70px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+#acc {
+
+    position: absolute;
+    left: 88%;
+    top: 8%;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;   
+}
+
+/*Scuhe*/
+
+#suche {
+
+    color: rgb(255, 255, 255);
+
+    width: 400px;
+    height: 600px;
+    position: absolute;    
+    top: 20%;
+    left: 2%;
+    border-radius: 7px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    
+    
+}
+
+
+input {
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+
+#bSuche,#senden{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 800;
+    background: transparent;
+    border-radius: 2px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+
+}
+
+
+#ka{
+    
+    position: relative;
+    left: 7%;
+    top: 10%;
+    font-weight: 800;
+    font-size: 20px;
+    height: 55px;
+    width: 360px;
+    
+
+}
+
+/*Beratung*/
+#beratung{
+    color: rgb(255, 255, 255);
+
+    width: 400px;
+    height: 600px;
+    position: absolute;
+    
+    top: 20%;
+    right: 2%;
+    border-radius: 7px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+
+}
+
+#nachricht{
+   
+    height: 100px;
+    
+}
+
+#nachricht {
+    height: 100px;
+    resize: none; 
+}
+
+#nachricht::placeholder {
+    text-align: top; 
+}
+
+
+#homeBild{
+    
+    position: absolute;
+    right: 165%; 
+    top: 20%;
+
+}
+
+
+
+/*Vor-Footer*/
+#vorFooter{
+
+    background-color: rgb(26, 26, 26);
+width: 100%;
+height: 500px;
+position: absolute;
+bottom: -57%;
+
+}
+
+#kontaktdaten{
+    position: relative;
+    left: 10%;
+    top: 10%;
+}
+
+#kontakt{
+font-size: 20px;
+color: white;
+font-weight: 700;
+}
+
+#email,#telefon{
+    font-size: 16px;
+    color: #a0a0a0;
+    font-weight: 600;
+}
+
+
+
+
+/*Footer*/
+
+footer {
+
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: absolute;
+    bottom: -65%;
+    width: 98.3%;
+
+    background-color: rgb(19, 19, 19);
+    border-bottom: 2px solid white;
+
+
+}
+
+
+
+
+
+
+/*Iphone 12 pro*/
+@media screen and (max-width: 500px) {
+
+header{
+
+    height: 100px ;
+    overflow-x: hidden;
+}
+
+
+
+
+body{
+    max-width: 100%;
+    height: 1320px;
+
+    overflow-x: hidden;
+}
+
+
+#home{
+    font-weight: 900;
+    font-size: 20px;
+    left: 9%;
+    top: 15%;
+}
+
+#logo{
+width: 30px;
+left: 9%;
+top: 15%;
+
+}
+#dropdownBild,.dropdown,nav,#homebild{
+    display: none;
+
+
+  
+}
+
+#acc{
+    left: 51%;
+    top: 11%;
+
+}
+
+
+
+#suche{
+    position: absolute;
+    top: 15.5%;
+    left: 0;
+    border-radius: 0px;
+    width: 99%;
+    height: 595px;
+
+}
+
+#beratung{
+    position: absolute;
+    top: 86%;
+    left: 0;
+    border-radius: 0px;
+    width: 99%;
+}
+
+
+
+
+footer{
+    bottom: -100%;
+    width: 92%;
+    overflow-x: hidden;
+}
+
+#vorFooter{
+    bottom: -90%;
+    height: 282.5px;
+    overflow-x: hidden;
+}
+
+}

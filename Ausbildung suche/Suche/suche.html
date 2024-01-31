@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Startseite</title>
+</head>
+<body>
+
+    <header>
+
+
+        <img src="../bilder/image.png" alt="Logo" id="logo">
+        <a href="../Home/index.html" id="home"> AusbildungsSuche</a>
+    
+
+
+    <nav>
+        <ul>
+            <li><a href="../Home/index.html">Startseite</a></li>
+            <li><a href="#">Über uns</a></li>
+            <li><a href="#">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="dropdown">
+    <span><img src="../bilder/image2.png" alt="menü" style="width: 70px;"></span>
+    <div class="dropdown-content">
+        <a href="#">Element 1</a>
+        <a href="#">Element 2</a>
+        <a href="#">Element 3</a>
+    </div>
+</div>
+
+
+<div id="acc">
+    <a href="../login/login.html" >Anmelden</a>
+    <b>/</b>
+    <a href="../register/register.html" style="color: red; ">Registrieren</a>
+
+</div>
+
+    <main>
+        <section id="suche">
+          
+            <form >                        
+                <input type="search" id="sucheInput" name="sucheInput" placeholder="Beruf">
+                <input type="text" id="ortinput" name="ortinput" placeholder="Ort">
+                <input type="date" id="zeitinput" name="zeitinput" placeholder="Ausbildungsbeginn">
+                <button id="bSuche" type="submit">Suchen</button>
+            </form>
+            <div id="tipp">Entscheide dich für einen Beruf, in dem du gefragt bist.</div>
+
+            <div id="suchErgebnisse">
+                
+
+            </div>
+        </section>
+
+     
+
+        
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Ausbildungssuche</p>
+    </footer>
+
+</body>
+</html>

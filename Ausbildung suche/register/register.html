@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Anmelden</title>
+</head>
+<body>
+
+   
+    <header>
+
+
+        <img src="../bilder/image.png" alt="Logo" id="logo">
+        <a href="../Home/index.html" id="home"> AusbildungsSuche</a>
+    
+
+
+    <nav>
+        <ul>
+            <li><a href="../Home/index.html">Startseite</a></li>
+            <li><a href="#">Über uns</a></li>
+            <li><a href="#">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="dropdown">
+    <span><img src="../bilder/image2.png" alt="menü" style="width: 70px;"></span>
+    <div class="dropdown-content">
+        <a href="#">Element 1</a>
+        <a href="#">Element 2</a>
+        <a href="#">Element 3</a>
+    </div>
+</div>
+<main>
+    <section id="registrationForm">
+        <h2>Neues Benutzerkonto erstellen</h2>
+        <form>
+            <label for="neueVorname">Vorname</label>
+            <input type="text" id="neueVorname" name="vName" required>
+            <label for="neueName">Name</label>
+            <input type="text" id="neueName" name="name" required>
+            <label for="neueEmail">E-Mail</label>
+            <input type="email" id="neueEmail" name="email" required>
+            <label for="neueUsername">Benutzername:</label>
+            <input type="text" id="neueUsername" name="username" required>
+            <label for="neuePassword">Passwort:</label>
+            <input type="password" id="neuePassword" name="password" required>
+            <label for="bestätigung">Passwort Bestätigen:</label>
+            <input type="password" id="bestätigung" name="bestätigung" required>
+            <button type="submit" id="bRegistrieren">Registrieren</button>
+        </form>
+        <p id="hatAcc">Bereits registriert? <a href="../login/login.html">Anmelden</a></p>
+    </section>
+</main>
+    <footer>
+        <p>&copy; 2024 Ausbildungssuche</p>
+    </footer>
+
+</body>
+</html>
